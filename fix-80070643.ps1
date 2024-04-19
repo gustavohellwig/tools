@@ -1,3 +1,12 @@
+# This is a fix for the Windows Update problem 80070643.
+# To do this, run: 
+
+	# $url = "https://github.com/gustavohellwig/tools/raw/main/fix-80070643.ps1"
+	# $tempPath = "$env:TEMP\fix-80070643.ps1"
+	# Invoke-WebRequest -Uri $url -OutFile $tempPath
+	# Invoke-Expression -Command "powershell.exe -File $tempPath"
+	# Remove-Item -Path $tempPath
+
 # ------------------------------------
 # Helper functions
 # ------------------------------------
