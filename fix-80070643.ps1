@@ -1,5 +1,5 @@
-# This is a fix for the Windows Update problem 80070643.
-# To do this, run: 
+# This is a fix for the Windows Update problem 80070643 that I got from the Microsoft website.
+# To use it, do: 
 
 	# $url = "https://github.com/gustavohellwig/tools/raw/main/fix-80070643.ps1"
 	# $tempPath = "$env:TEMP\fix-80070643.ps1"
