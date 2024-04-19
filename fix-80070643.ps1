@@ -6,6 +6,7 @@
 	# Invoke-WebRequest -Uri $url -OutFile $tempPath
 	# Invoke-Expression -Command "powershell.exe -File $tempPath"
 	# Remove-Item -Path $tempPath
+
 # ------------------------------------
 # Helper functions
 # ------------------------------------
