@@ -6,7 +6,6 @@
 	# Invoke-WebRequest -Uri $url -OutFile $tempPath
 	# Invoke-Expression -Command "powershell.exe -File $tempPath"
 	# Remove-Item -Path $tempPath
-
 # ------------------------------------
 # Helper functions
 # ------------------------------------
@@ -46,7 +45,6 @@ function DisplayWinREStatus() {
       LogMessage($line.Trim())
     }
   }
-	
   return $Status, $Location
 }
 # ------------------------------------
@@ -65,6 +63,7 @@ LogMessage("Examining the system...")
 $NeedShrink = $true
 $NeedCreateNew = $false
 $NeedBackup = $false
+$SkipConfirmation = $true
 # Get WinRE partition info
 $InitialWinREStatus = DisplayWinREStatus
 $WinREStatus = $InitialWinREStatus[0]
@@ -527,3 +526,4 @@ if ($NeedBackup) {
 }
 LogMessage("")
 LogMessage("Successfully completed the operation")
+
